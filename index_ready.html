@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+ 	<html>
+		<head>
+			<title>ButtonsAndImages</title>
+			<meta name="viewport" content="width=device-width; user-scalable=no; initial-scale=1.0; maximum-scale=1.0;"/>
+
+      <meta name="apple-mobile-web-capable" content="yes" />
+      <link rel="icon" sizes="196x196" href="nice-highres.png">
+      <link rel="apple-touch-icon" href="icon-iphone.png"/>
+
+			<script src="jquery-1.7.1.min.js"> </script>
+
+      <style type="text/css">
+
+        body {
+          text-align: center;
+          background: #000000;
+        }
+
+        button {
+          width: 45%;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border-radius: 5px;
+          font-size: 20px;
+        }
+
+        #butt_1 {
+          background-color: #B26A34;
+        }
+
+        #butt_2 {
+          background-color: red;
+        }
+
+        #butt_3 {
+          background-color: green;
+        }
+
+        #butt_4 {
+          background-color: orange;
+        }
+
+        #butt_5 {
+          background-color: yellow;
+        }
+
+        #butt_6 {
+          background-color: blue;
+        }
+
+        #butt_7 {
+          background-color: white;
+        }
+
+        #butt_8 {
+          background-color: purple;
+        }
+        
+      </style>
+
+		</head>
+
+		<body>
+
+      <audio id="buttonsound_1" src="button1.mp3"> </audio>
+      <audio id="buttonsound_2" src="button2.mp3"> </audio>
+      <audio id="buttonsound_3" src="button3.mp3"> </audio>
+      <audio id="buttonsound_4" src="button4.mp3"> </audio>
+      <audio id="buttonsound_5" src="button5.mp3"> </audio>
+      <audio id="buttonsound_6" src="button6.mp3"> </audio>
+      <audio id="buttonsound_7" src="button7.mp3"> </audio>
+      <audio id="buttonsound_8" src="button8.mp3"> </audio>
+
+      <button id="butt_1" onclick="button_1_soundplay()"> Photo 1 </button>
+      <button id="butt_2" onclick="button_2_soundplay()"> Photo 2 </button>
+      <button id="butt_3" onclick="button_3_soundplay()"> Photo 3 </button>
+      <button id="butt_4" onclick="button_4_soundplay()"> Photo 4 </button>
+      <button id="butt_5" onclick="button_5_soundplay()"> Photo 5 </button>
+      <button id="butt_6" onclick="button_6_soundplay()"> Photo 6 </button>
+      <button id="butt_7" onclick="button_7_soundplay()"> Photo 7 </button>
+      <button id="butt_8" onclick="button_8_soundplay()"> Photo 8 </button>
+    
+      <img id="image1" src="img1.jpg" width="100%">
+      <img id="image2" src="img2.jpg" width="100%">
+      <img id="image3" src="img3.jpg" width="100%">
+      <img id="image4" src="img4.jpg" width="100%">
+      <img id="image5" src="img5.jpg" width="100%">
+      <img id="image6" src="img6.jpg" width="100%">
+      <img id="image7" src="img7.jpg" width="100%">
+      <img id="image8" src="img8.jpg" width="100%">
+
+
+		<script>
+			 
+			$( "#image1" ).hide();
+      $( "#image2" ).hide();
+      $( "#image3" ).hide();
+      $( "#image4" ).hide();
+      $( "#image5" ).hide();
+      $( "#image6" ).hide();
+      $( "#image7" ).hide();
+      $( "#image8" ).hide();
+			
+      $( "#butt_1"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image1" ).show("fast");
+      });
+
+      $( "#butt_2"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image2" ).show("fast");
+      });      
+
+      $( "#butt_3"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image3" ).show("fast");
+      });
+
+      $( "#butt_4"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();        
+        $( "#image4" ).show("fast");
+      });
+
+      $( "#butt_5"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image5" ).show("fast");
+      });
+
+      $( "#butt_6"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image6" ).show("fast");
+      });
+
+      $( "#butt_7"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image7" ).show("fast");
+      });
+
+      $( "#butt_8"  ).click(function() {
+        $( "#butt_1" ).hide();
+        $( "#butt_2" ).hide();
+        $( "#butt_3" ).hide();
+        $( "#butt_4" ).hide();
+        $( "#butt_5" ).hide();
+        $( "#butt_6" ).hide();
+        $( "#butt_7" ).hide();
+        $( "#butt_8" ).hide();
+        $( "#image8" ).show("fast");
+      });
+           
+
+
+      $( "#image1" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image2" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image3" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image4" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image5" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image6" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image7" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+      $( "#image8" ).click(function() {
+        $( this ).hide();
+        $( "#butt_1" ).show();
+        $( "#butt_2" ).show();
+        $( "#butt_3" ).show();
+        $( "#butt_4" ).show();
+        $( "#butt_5" ).show();
+        $( "#butt_6" ).show();
+        $( "#butt_7" ).show();
+        $( "#butt_8" ).show();
+      });
+
+
+      function button_1_soundplay(){
+        var b1_sound = document.getElementById("buttonsound_1");
+        b1_sound.play();
+                }
+
+      function button_2_soundplay(){
+        var b2_sound = document.getElementById("buttonsound_2");
+        b2_sound.play();
+                }
+
+      function button_3_soundplay(){
+        var b3_sound = document.getElementById("buttonsound_3");
+        b3_sound.play();
+                }
+
+      function button_4_soundplay(){
+        var b4_sound = document.getElementById("buttonsound_4");
+        b4_sound.play();
+                }
+
+      function button_5_soundplay(){
+        var b5_sound = document.getElementById("buttonsound_5");
+        b5_sound.play();
+                }
+						
+      function button_6_soundplay(){
+        var b6_sound = document.getElementById("buttonsound_6");
+        b6_sound.play();
+                }
+
+      function button_7_soundplay(){
+        var b7_sound = document.getElementById("buttonsound_7");
+        b7_sound.play();
+                }
+
+      function button_8_soundplay(){
+        var b8_sound = document.getElementById("buttonsound_8");
+        b8_sound.play();
+                }
+
+		</script>			
+		</body>
+	</html>
